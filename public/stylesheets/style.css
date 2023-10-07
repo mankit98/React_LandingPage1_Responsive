@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  /* background-color: #e2ebea; */
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  /* background-image: url(https://images.unsplash.com/photo-1695755656490-74ddf32eeff5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+  position: relative;
+}
+
+.nav {
+  height: 60px;
+  width: 100%;
+  padding: 0.5vmax 3vmax;
+  /* background-color: #ef0909; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .searchbar {
+  height: 100%;
+  width: 24vw;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.nav .searchbar input {
+  border: 2px solid lightseagreen;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0.3vw 2.4vw;
+}
+.nav .searchbar i {
+  font-size: 20px;
+}
+
+#brandlogo {
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .nav-part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #9a1ad5; */
+  gap: 3vw;
+}
+.nav .nav-part2 h4 {
+  font-size: larger;
+}
+.nav .nav-part2 #hamburger {
+  font-size: 2vw;
+  display: none;
+}
+
+.content {
+  height: calc(100% - 60px);
+  width: 100%;
+  /* background-color: rgb(236, 183, 118); */
+  display: flex;
+}
+
+.content .leftdiv {
+  height: 100%;
+  width: 50%;
+  padding: 0.8vmax 5vmax;
+  padding-top: 5vh;
+  /* background-color: #574d67; */
+}
+.content .leftdiv span {
+  color: rgb(24, 176, 247);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content .leftdiv p {
+  margin-top: 2vmax;
+  /* width: 80%; */
+  font-size: 4vw;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2.1vw;
+}
+
+.content .leftdiv #para {
+  font-size: 1.5vw;
+  margin-top: 2vmax;
+  /* padding-right: 8vw; */
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.content .leftdiv button {
+  margin-top: 2vmax;
+  margin-right: 1.6vmax;
+  padding: 1vw 2.5vw;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4vmax;
+  background-color: rgb(24, 176, 247);
+  color: aliceblue;
+  font-weight: 600;
+}
+
+.content .rightdiv {
+  height: 100%;
+  width: 50%;
+  padding: 1vw;
+  /* background-color: #e903fa; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content img {
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------------------------------- */
+@media (max-width: 600px) {
+  .nav {
+    height: 60px;
+    /* background-color: yellow; */
+  }
+  .nav #brandlogo {
+    height: 14vw;
+    width: 16vw;
+  }
+  .nav .nav-part2 h4 {
+    display: none;
+  }
+
+  .nav .nav-part2 #hamburger {
+    font-size: 4.6vw;
+    font-weight: 800;
+    display: block;
+  }
+
+  .content {
+    height: calc(100% - 60px);
+    flex-direction: column;
+  }
+  .content .leftdiv {
+    width: 100%;
+    height: 55%;
+  }
+  .content .leftdiv p {
+    font-size: 7vw;
+  }
+  .content .leftdiv #para {
+    text-align: justify;
+    font-size: 3vw;
+  }
+
+  .content .leftdiv button {
+    margin-top: 2vmax;
+    margin-right: 1.5vmax;
+    padding: 1vw 2.5vw;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 3px;
+    font-size: 2.4vmax;
+    background-color: rgb(24, 176, 247);
+    color: aliceblue;
+  }
+  .content .rightdiv {
+    width: 100%;
+    height: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    height: 60px;
+    /* background-color: yellow; */
+  }
+  .nav #brandlogo {
+    height: 14vw;
+    width: 16vw;
+  }
+  .nav .nav-part2 h4 {
+    display: none;
+  }
+
+  .nav .nav-part2 #hamburger {
+    font-size: 4.6vw;
+    font-weight: 800;
+    display: block;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .content .leftdiv .buttons {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+/* ---------------------------------------------------- */
+
+/* notification button  */
+
+/* ________________ */
+
+/* ----------------------- */
+
+/* webkit scrollbar  */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #888;
+}
+::-webkit-scrollbar-thumb {
+  background: #eba564;
+}
+
+#firstline::-webkit-scrollbar {
+  display: none;
+}
+#secondline::-webkit-scrollbar {
+  display: none;
+}
+#thirdline::-webkit-scrollbar {
+  display: none;
+}
